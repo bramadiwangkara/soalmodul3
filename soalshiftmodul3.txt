@@ -1,0 +1,86 @@
+SOAL SHIFT MODUL 3
+
+SOAL 1
+Aidil Abdillah Suyudi, biasa dipanggil Aidil, adalah seorang yang mempunyai kepribadian “ingin didengar” dan “ingin diperhatikan” oleh semua orang. Ketika Aidil sedang berada di depan banyak orang, Aidil suka sekali memukul sebuah kayu dengan menggunakan palu. Aidil melakukan hal tersebut supaya orang-orang yang berada di depannya diam dan hanya fokus kepada Aidil. Lama kelamaan, Aidil merasa bosan dengan cara tersebut. Maka Aidil mencari jalan lain. Aidil mempunyai ide bagaimana jika dia membeli beberapa senjata. Maka datanglah Aidil ke seorang distributor senjata yang bernama Khawari Muhammad Dzakwan, biasa dipanggil Hawari. 
+
+Singkat cerita, Aidil sering kali membeli senjata ke Hawari. Suatu ketika Hawari meminta tolong kepada Aidil untuk membuatkan sebuah sistem informasi sederhana untuk tokonya. Sistem yang diminta oleh Hawari terdapat dua, untuk pembeli dan juga untuk Hawari sendiri. Spesifikasi sistem untuk Hawari (penjual) antara lain :
+Terdapat dua menu : lihat stock senjata dan tambah stock senjata. Menu tersebut harus bisa ditampilkan di sistem.
+Tambah stock senjata memiliki format inputan : [nama_barang] [jumlah_barang]. Jika barang yang sudah ada di stock diinputkan kembali, maka jumlah barang tersebut ditambah.
+	Contoh :
+	Jumlah MP4A1 di stock = 19 barang
+	MP4A1 20 -> menjalankan fitur tambah stock
+	Maka stock MP4A1 akan menjadi 39 barang
+Lihat stock senjata berfungsi untuk menampilkan semua senjata yang terdapat di dalam stock. Oh iya, Hawari juga meminta hanya ditampilkan senjata-senjata yang stock > 0. Format outputnya adalah : [nama_barang] [jumlah_barang]
+Catatan : Barang yang dijual di toko Hawari -> MP4A1, PM2-V1, SPR-3, SS2-V5, SPG1-V3, dan MINE
+Spesifikasi sistem untuk pembeli antara lain :
+Terdapat dua menu : lihat stock senjata dan beli senjata. Menu tersebut harus bisa ditampilkan di sistem.
+Fitur beli senjata memiliki format inputan : [nama_barang] [jumlah_barang]. Jika fitur ini dijalankan, maka stock senjata akan berkurang sesuai jumalh yang dibeli. Jika jumlah pembelian lebih dari stock yang tersedia, maka program menampilkan pesan “barang di stock tidak cukup”.
+Lihat stock senjata berfungsi untuk menampilkan semua senjata yang terdapat di dalam stock. Senjata yang jumlah stock nya kosong juga ikut ditampilkan. Format outputnya adalah : [nama_barang] [jumlah_barang]
+
+
+
+SOAL 2
+Aidil akhirnya mempunyai banyak senjata. Senjata-senjata tersebut sering dia pakai dan akhirnya cepat habis. Tetapi MINE (ranjau) yang dia beli tidak dipakai sedikitpun. Aidil pun akhirnya mempunyai ide untuk memasang MINE yang dia miliki di sekitar rumahnya supaya rumah Aidil aman dari perampok / orang-orang jahat.
+
+Suatu hari, ada teman Aidil yang bernama Raldo Kusuma, biasa dipanggil Raldo, ingin bertamu ke rumah Aidil. Aidil pun memberitahu ke Raldo kalau harus berhati-hati saat akan memasuki halaman rumahnya karena terdapat banyak ranjau. Singkat cerita, Raldo pun akhirnya masuk ke rumah Aidil dan mereka pun berbincang.
+
+Raldo adalah seorang yang sangat suka bermain game, dia pun akhirnya menawarkan kepada Aidil untuk membuat game. Game yang akan dibuat adalah game ranjau, terinspirasi dari apa yang Aidil lakukan untuk halaman rumahnya. Spesifikasi dari game yang akan dibuat Raldo adalah sebagai berikut:
+Terdapat 2 pemain, tiap pemain dapat memasukan nama sesuai inputan.
+Masing-masing pemain mempunyai 16 lubang yang nantinya bisa diisi oleh ranjau.
+Selama game berlangsung, pemain ke-1 dan pemain ke-2 akan saling bergantian mengisi lubang-lubang yang dimilikinya dengan ranjau. Sedangkan salah satunya memberikan tebakan lubang mana saja yang aman dari ranjau.
+Setiap gilirannya, pemain bisa memasang 1-4 ranjau di lubang yang berbeda, dan lawannya harus menebak 4 lubang.
+Cara pemasanganan maupun penebakan ranjau adalah : [nomor_lubang]
+Pemain yang memasang ranjau mendapatkan poin +1 jika pemain yang menebak salah menebak lubang (lubang tersebut ada ranjaunya)
+Pemain yang menebak lubang mendapatkan poin +1 jika pemain lubang yang dia tebak tidak terdapat ranjau.
+Game berakhir ketika:
+Salah satu pemain ada yang mendapatkan nilai 10
+Tidak ada pemain yang mendapatkan nilai 10, dan kedua lubang dari kedua pemain sudah terisi penuh dengan ranjau.
+Terdapat fitur untuk mengecek poin dari kedua pemain
+Permainan ini hanya dijalankan di 1 console saja
+Permainan ini harus menggunakan lebih dari 1 thread
+
+
+
+
+SOAL 3
+Suatu hari Aidil pun ingin mempunyai sebuah kolam sendiri, yang nantinya hanya akan diisi oleh Lohan dan Kepiting. Sebelum membuat sebuah lohan tersebut, Aidil ingin memvisualisasikan kolamnya tersebut dalam sebuah program C. Program yang ingin Aidil buat memiliki spesifikasi sebagai berikut:
+Hewan yang tersedia adalah Lohan dan Kepiting
+Kedua hewan tersebut mempunyai status, yang nantinya akan digunakan sebagai parameter lapar / tidak.
+Status awal dari kedua hewan tersebut adalah 100.
+Pada hewan lohan, setiap 10 detik statusnya berkurang sebanyak 15
+Pada hewan kepiting, setiap 20 detik statusnya berkurang sebanyak 10
+Terdapat dua fitur menu, antara lain beri makan lohan & beri makan kepiting.
+Beri makan lohan berfungsi untuk memberi makan lohan, dan statusnya bertambah sebanyak 10
+Beri makan kepiting berfungsi untuk memberi makan kepiting, dan statusnya bertambah sebanyak 10
+Game akan berakhir jika:
+Status dari salah satu hewan tersebut <= 0
+Status dari salah satu hewan tersebut > 100
+Program ini harus menggunakan lebih dari 1 thread
+
+Capek ya baca cerita Aidil terus, gantian cerita yang lain ya h3h3
+
+
+SOAL 4
+Aidil mempunyai teman dekat, teman seperjuangan selama kurang lebih 6 bulan untuk menjadi bagian dari salah satu lab di jurusannya, sebut saja Aguel. Aguel adalah mahasiswa semester tiga. Saat kuliah kalkulus, Aguel teringat jika pernah membuat sebuah program untuk mencari hasil dari bilangan faktorial. Tetapi Aguel sadar, jika program yang ia buat tidaklah sepurna, dan bisa dibilang program tersebut terlalu lama. Karena Aguel kesusahan untuk membuat program yang sempurna dan dapat berjalan lebih cepat, Aguel meminta tolong kepada temannya bernama Syach Putri. Syach Putri mempunyai ide untuk membuat program yang baru dengan menggunakan thread. Setiap bilangan faktorial yang dicari hasilnya akan dibuatkan thread untuk mempercepat perhitungan. Syach Putri sangatlah baik, maka ia bersedia untuk membantu Aguel.
+
+	Contoh Input :
+	./faktorial 3 2 4
+
+	Contoh Output :
+	Hasil 2! = 2
+	Hasil 3! = 6
+	Hasil 4! = 24
+
+
+Soal 5
+Suatu hari, Ridho sedang asik membaca buku Novel. Ridho kaget karena didalam buku tersebut ada nama dua cewek yang diidolakannya yaitu Ifah dan Fina. Ridhopun kepo ada berapa kali nama cewek yang diidolakannya tertulis pada novel. Bantulah Ridho untuk membuat program pencarian kata menggunakan thread. Setiap kata yang dicari akan dibuatkan thread tersendiri.
+
+Input :
+./cari Ifah Fina
+
+Output : 
+Ifah : 2
+Fina : 10
+
+
+
