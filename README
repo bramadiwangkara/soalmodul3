@@ -1,0 +1,1 @@
+soal no 3 compile dengan gcc -lpthread -o output input.c
